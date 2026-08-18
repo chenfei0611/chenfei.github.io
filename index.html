@@ -324,9 +324,9 @@
       border-radius: 14px;
       padding: 27px 30px;
       display: flex;
-      gap: 30px;
+      gap: 36px;
       align-items: center;
-      min-height: 150px;
+      min-height: 172px;
       box-shadow: var(--shadow);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
       position: relative;
@@ -347,25 +347,22 @@
     }
 
     .edu-logo-wrap {
-      width: 92px;
-      height: 92px;
-      flex: 0 0 92px;
-      border-radius: 50%;
-      background: linear-gradient(145deg, #f4f0e8, #edf2ef);
-      border: 1px solid var(--border);
+      width: 152px;
+      height: 120px;
+      flex: 0 0 152px;
       display: grid;
       place-items: center;
       position: relative;
-      overflow: hidden;
     }
 
     .edu-logo {
       position: relative;
       z-index: 2;
-      width: 68px;
-      height: 68px;
+      width: 100%;
+      height: 100%;
       object-fit: contain;
       display: block;
+      filter: drop-shadow(0 4px 7px rgba(25, 52, 74, 0.09));
     }
 
     .logo-fallback {
@@ -379,6 +376,7 @@
       letter-spacing: 0.05em;
       color: var(--navy-soft);
       text-align: center;
+      opacity: 0.42;
     }
 
     .edu-body { flex: 1; display: flex; flex-direction: column; justify-content: center; }
@@ -442,9 +440,9 @@
       header { justify-content: flex-start; }
       nav { min-width: max-content; }
       section { margin-bottom: 68px; }
-      .edu-card { padding: 24px 20px; gap: 18px; align-items: flex-start; }
-      .edu-logo-wrap { width: 70px; height: 70px; flex-basis: 70px; }
-      .edu-logo { width: 52px; height: 52px; }
+      .edu-card { padding: 24px 20px; gap: 20px; align-items: center; }
+      .edu-logo-wrap { width: 96px; height: 82px; flex-basis: 96px; }
+      .edu-logo { width: 100%; height: 100%; }
       .edu-school { font-size: 1.25rem; }
       .edu-degree { font-size: 0.94rem; }
     }
